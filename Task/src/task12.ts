@@ -4,6 +4,9 @@ export type Guests = {
     status: 'living' | 'deceased'
 };
 
+// Define more Guest List
+
+
 // Export the guest list array
 export const guestList: Guests[] = [
     { name: "Zeeshan Usmani", status: "living" },
