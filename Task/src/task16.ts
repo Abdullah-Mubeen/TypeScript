@@ -6,7 +6,7 @@ console.log("I'm sorry to inform you that my new dinner table won't arrive in ti
 
 while (guestList.length > 2) {
     let removeGuest = guestList.pop();
-    console.log(`${removeGuest?.name}, I'm sorry I can't inite you to dinner.`);    
+    console.log(`${removeGuest?.name}, I'm sorry I can't invite you to dinner.`);    
 }
 
 guestList.forEach(guests => {
