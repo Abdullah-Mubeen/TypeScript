@@ -1,16 +1,21 @@
-let personsAge: number = 20;
+const personsAge: number[] = []; 
 
-if (personsAge < 2) {
-    console.log("large fan following");    
-} else if (personsAge === 2 && personsAge < 4) {
-    console.log("The fan following is increased");    
-} else if (personsAge === 4 && personsAge < 13) {
-    console.log("Slightly the fan following is decressing");    
-} else if (personsAge === 13 && personsAge < 20) {
-    console.log("Understanding the behaiour of others");
-} else if (personsAge === 20 && personsAge < 65) {
-    console.log("The fan following is just for the purpose of themself");
-} else if (personsAge >= 65) {
-    console.log("Much Experience he have");    
+if (personsAge.length > 0) {
+    for (const age of personsAge) {
+        if (age < 2) {
+            console.log("This person is a baby.");
+        } else if (age >= 2 && age < 4) {
+            console.log("This person is a toddler.");
+        } else if (age >= 4 && age < 13) {
+            console.log("This person is a kid.");
+        } else if (age >= 13 && age < 20) {
+            console.log("This person is a teenager.");
+        } else if (age >= 20 && age < 65) {
+            console.log("This person is an adult.");
+        } else {
+            console.log("This person is an elder.");
+        }
+    }
+} else {
+    console.log("We need to find some users age!");
 }
-
